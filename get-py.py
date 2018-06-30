@@ -32,6 +32,13 @@ tasks = [
         'title': u'Pushing from jenkins',
         'description': u'Using CloudFoundry Plugin',
         'done': True
+    },
+    {
+        
+        'id': 5,
+        'title': u'New trial',
+        'description': u'Using CF Plugin and executing',
+        'done': True
     }
 ]
 
@@ -53,7 +60,7 @@ cloudFormation = [{
   }
 ]
 
-@app.route('/api/v1/tasks', methods=['GET'])
+@app.route('/api/nav/task', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
 	
