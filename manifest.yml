@@ -3,9 +3,6 @@ applications:
 - name: pythonfoundry
   memory: 128MB
   disk_quota: 128MB
-  random-route: false
+  random-route: true
   buildpack: python_buildpack
   command: python get-py.py
-  routes:
-    - route:  navadeep-devops.cfapps.io
-    - route:  navadeep0685.cfapps.io
